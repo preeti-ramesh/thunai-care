@@ -1,0 +1,99 @@
+{
+  "_comment": "FICTIONAL example. Not a real person. Never commit real patient data to this repository.",
+  "patientLabel": "Example patient (fictional)",
+  "familyObservations": [
+    { "date": "2026-03-20", "by": "Sister", "text": "Sleeping most of the day since the new tablets. Not interested in talking to anyone." },
+    { "date": "2026-05-02", "by": "Father", "text": "Seems more confused than before the treatment started. Asks the same question several times." }
+  ],
+  "visits": [
+    {
+      "date": "2025-11-04",
+      "doctor": "A",
+      "diagnosis": "Anxiety with low mood",
+      "cost": 800,
+      "wellbeing": 4,
+      "sideEffects": "",
+      "notes": "First visit.",
+      "medications": [
+        { "name": "Escitalopram", "dose": "10 mg" },
+        { "name": "Clonazepam", "dose": "0.25 mg" }
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "doctor": "A",
+      "diagnosis": "Anxiety with low mood",
+      "cost": 900,
+      "wellbeing": 6,
+      "sideEffects": "",
+      "notes": "Feeling a bit better.",
+      "medications": [
+        { "name": "Escitalopram", "dose": "10 mg" },
+        { "name": "Clonazepam", "dose": "0.25 mg" }
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "doctor": "A",
+      "diagnosis": "Anxiety with low mood",
+      "cost": 1400,
+      "wellbeing": 5,
+      "sideEffects": "Drowsy in the mornings",
+      "notes": "",
+      "medications": [
+        { "name": "Escitalopram", "dose": "20 mg" },
+        { "name": "Clonazepam", "dose": "0.5 mg" },
+        { "name": "Tab Quetiapine 25mg", "dose": "25 mg" }
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "doctor": "A",
+      "diagnosis": "Anxiety, depression",
+      "cost": 1800,
+      "wellbeing": 4,
+      "sideEffects": "Weight gain, drowsy",
+      "notes": "",
+      "medications": [
+        { "name": "Escitalopram", "dose": "20 mg" },
+        { "name": "Sertraline", "dose": "50 mg" },
+        { "name": "Clonazepam", "dose": "0.5 mg" },
+        { "name": "Quetiapine", "dose": "50 mg" },
+        { "name": "Zolpidem", "dose": "10 mg" }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "doctor": "A",
+      "diagnosis": "Depression",
+      "cost": 2200,
+      "wellbeing": 3,
+      "sideEffects": "Very sleepy, forgetful",
+      "notes": "",
+      "medications": [
+        { "name": "Sertraline", "dose": "100 mg" },
+        { "name": "Clonazepam", "dose": "0.5 mg" },
+        { "name": "Quetiapine", "dose": "100 mg" },
+        { "name": "Olanzapine", "dose": "5 mg" },
+        { "name": "Zolpidem", "dose": "10 mg" }
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "doctor": "A",
+      "diagnosis": "Depression",
+      "cost": 2400,
+      "wellbeing": 3,
+      "sideEffects": "Very sleepy",
+      "notes": "",
+      "medications": [
+        { "name": "Sertraline", "dose": "100 mg" },
+        { "name": "Clonazepam", "dose": "1 mg" },
+        { "name": "Quetiapine", "dose": "100 mg" },
+        { "name": "Olanzapine", "dose": "10 mg" },
+        { "name": "Zolpidem", "dose": "10 mg" },
+        { "name": "Calmora", "dose": "" }
+      ]
+    }
+  ]
+}

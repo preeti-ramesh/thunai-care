@@ -1,0 +1,124 @@
+================================================================
+  THUNAI CARE  -  START HERE
+  A second look at prescriptions, and better questions for your doctor.
+================================================================
+
+Thunai Care is an early prototype. It is NOT medical advice.
+Never stop or change a medicine on your own.
+In crisis in India? Call Tele-MANAS on 14416 (free, 24x7).
+
+Your information stays on your own computer. Nothing is uploaded.
+
+
+----------------------------------------------------------------
+ 1. THE EASIEST WAY  (no installing, no terminal)
+----------------------------------------------------------------
+
+  1. Find the file named:   thunai-care.html
+  2. Double-click it. It opens in your web browser.
+  3. Press "See an example" to look around first.
+
+  That's it.
+
+
+----------------------------------------------------------------
+ 2. GETTING THE FILES FROM GITHUB
+----------------------------------------------------------------
+
+  Without any tools:
+    1. Open the project page on GitHub.
+    2. Click the green "Code" button, then "Download ZIP".
+    3. Right-click the downloaded ZIP and choose "Extract All".
+    4. Open the extracted folder and follow section 1.
+
+  With Git, in a terminal:
+    git clone https://github.com/YOUR-USERNAME/thunai-care.git
+    cd thunai-care
+
+  (No Git? On Windows run:  winget install Git.Git
+   then close and reopen the terminal.)
+
+
+----------------------------------------------------------------
+ 3. RUNNING FROM A TERMINAL  (Windows Command Prompt or PowerShell)
+----------------------------------------------------------------
+
+  Open the terminal:
+    Press the Windows key, type  cmd  and press Enter.
+
+  Go into the project folder. Tip: type  cd  and a space, then drag
+  the folder from File Explorer into the window, and press Enter.
+    cd "C:\Users\you\Downloads\thunai-care"
+
+  Open the app without installing anything:
+    start thunai-care.html
+
+  Or double-click  start-windows.bat  in the folder.
+
+  On Mac or Linux:
+    open thunai-care.html                (Mac)
+    xdg-open thunai-care.html            (Linux)
+    sh start-mac-linux.sh                (either)
+
+
+----------------------------------------------------------------
+ 4. OPTIONAL: WITH NODE.JS  (for testing and developing)
+----------------------------------------------------------------
+
+  Install Node.js once:
+    winget install OpenJS.NodeJS.LTS
+  Then CLOSE and REOPEN the terminal, and check:
+    node -v
+
+  From inside the project folder:
+    npm start        Opens the app at http://localhost:8080
+                     (press Ctrl + C to stop)
+    npm run demo     Prints an example report in the terminal
+    npm test         Runs the checks (should say "fail 0")
+    npm run guide    Shows this guide again
+    npm run build    Rebuilds thunai-care.html after code changes
+
+  No "npm install" is needed. There is nothing to download.
+
+  If PowerShell says "running scripts is disabled", run this once:
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+  or use Command Prompt (cmd) instead.
+
+
+----------------------------------------------------------------
+ 5. READING THE DOCUMENTS IN A TERMINAL
+----------------------------------------------------------------
+
+  Command Prompt:   more README.md
+  PowerShell:       Get-Content README.md | more
+  Mac / Linux:      less README.md
+
+  Press Space for the next page, Q to quit.
+  Or simply open any .md or .txt file in Notepad.
+
+  Useful documents:
+    README.md                     What it is and how it works
+    DISCLAIMER.md                 Please read before using
+    docs/trust-and-safety.md      How privacy and fairness are protected
+    docs/red-flag-criteria.md     Every check, with its source
+    CHANGELOG.md                  What changed in each version
+
+
+----------------------------------------------------------------
+ 6. SOMETHING NOT WORKING?
+----------------------------------------------------------------
+
+  "node is not recognized"
+      Node.js isn't installed, or the terminal was open during the
+      install. Close and reopen the terminal. You can always use
+      thunai-care.html without Node.js.
+
+  "Photo of bill" says it could not load the reader
+      Reading photos needs internet the first time. Check your
+      connection, or paste / type the medicines instead.
+
+  The page is blank
+      Use a recent Chrome, Edge, Firefox or Safari.
+
+  Port already in use
+      npm start picks the next free port automatically and prints it.

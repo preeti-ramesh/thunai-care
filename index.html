@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thunai Care — a second look at prescriptions</title>
+  <meta name="description" content="Track psychiatric prescriptions over time and spot patterns worth asking a doctor about. Prototype." />
+  <link rel="stylesheet" href="app/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">◐</span>
+        <div>
+          <h1>thunai <span class="care">care</span></h1>
+          <p class="tag"><i>Thunai</i> means companion. A second look at your prescriptions, and better questions for your doctor.</p>
+        </div>
+        <span class="badge">Prototype v0.4</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <ol class="steps" aria-label="How it works">
+      <li><b>1</b> Add visits</li>
+      <li><b>2</b> See the pattern</li>
+      <li><b>3</b> Take questions to a doctor</li>
+    </ol>
+
+    <section id="welcome" class="welcome" aria-labelledby="welcome-h">
+      <h2 id="welcome-h">Welcome. It's okay to have questions about care.</h2>
+      <p>Thunai helps you see how prescriptions have changed over time, so you can ask clear questions. Before you start, three promises:</p>
+      <ul>
+        <li><b>Private.</b> Everything stays on this device. Nothing is uploaded — even photos are read here.</li>
+        <li><b>No names needed.</b> Use a nickname. Doctors are just "A" or "B".</li>
+        <li><b>No blame.</b> This doesn't judge any doctor, and it's not medical advice. Never stop a medicine on your own.</li>
+      </ul>
+      <button type="button" class="primary" data-act="welcome-ok">I understand — let's start</button>
+    </section>
+
+    <main class="layout">
+      <section class="panel input" aria-labelledby="in-h">
+        <div class="panel-head">
+          <h2 id="in-h">1. Add visits</h2>
+          <div class="tools">
+            <button type="button" id="load-example" class="ghost">See an example</button>
+            <label class="ghost file-btn">Import<input type="file" id="import" accept="application/json" hidden /></label>
+            <button type="button" id="export" class="ghost" title="Download your full record to keep">Save copy</button>
+            <button type="button" id="clear" class="ghost danger">Delete all my data</button>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>Who is this for? (a nickname is fine)</span>
+          <input id="patient-label" type="text" placeholder="e.g. Amma, or Me" />
+        </label>
+
+        <div id="visits"></div>
+        <button type="button" id="add-visit" class="primary wide">+ Add a visit</button>
+        <p class="hint center">Add one visit at a time. You can always come back and change anything.</p>
+
+        <h3 class="sub">Family or friend observations <span class="opt">optional</span></h3>
+        <p class="hint">People close to the patient often notice changes first. Describe what you saw — please avoid names of people or places.</p>
+        <div id="observations"></div>
+        <button type="button" id="add-obs" class="ghost wide">+ Add an observation</button>
+      </section>
+
+      <section class="panel output" aria-labelledby="out-h" aria-live="polite">
+        <div class="panel-head">
+          <h2 id="out-h">2. What the pattern shows</h2>
+          <div class="tools">
+            <div class="seg" role="group" aria-label="Choose view">
+              <button type="button" data-view="patient" aria-pressed="true">For me</button>
+              <button type="button" data-view="doctor" aria-pressed="false">Doctor summary</button>
+            </div>
+          </div>
+        </div>
+        <div class="subtools">
+          <label id="anon-wrap" class="check" hidden>
+            <input type="checkbox" id="anon" checked /> Anonymous (for a second-opinion doctor): no names, no notes, dates as weeks
+          </label>
+          <span class="spacer"></span>
+          <button type="button" id="export-anon" class="ghost" title="Download an anonymous copy to share">Share anonymously</button>
+          <button type="button" id="print" class="ghost">Print / save PDF</button>
+        </div>
+        <div id="report"></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Thunai Care is an early open prototype. Pattern checks are based on published guidance (American Psychiatric
+        Association Choosing Wisely, Alabama Psychiatric Medication Review Team, NHS England STOMP, UK guidance on sedatives) plus a few
+        project heuristics awaiting clinical review. See <code>docs/red-flag-criteria.md</code> and <code>docs/trust-and-safety.md</code>.</p>
+      <p>Private by design: your data stays in this browser. Reading a photo downloads an open-source reader (Tesseract) the first time; the photo itself never leaves your device.</p>
+      <p>In crisis in India? Call <strong>Tele-MANAS 14416</strong> (free, 24×7).</p>
+    </footer>
+  </div>
+
+  <script type="module" src="app/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "thunai-care",
+  "version": "0.4.0",
+  "description": "Helps patients and families track psychiatric prescriptions over time and spot patterns worth asking a doctor about.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "guide": "node scripts/guide.js",
+    "demo": "node cli/analyze.js examples/sample-patient.json",
+    "test": "node --test",
+    "build": "node scripts/build-single-file.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
