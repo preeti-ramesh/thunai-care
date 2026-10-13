@@ -32,7 +32,7 @@ Your information stays on your own computer. Nothing is uploaded.
     4. Open the extracted folder and follow section 1.
 
   With Git, in a terminal:
-    git clone https://github.com/YOUR-USERNAME/thunai-care.git
+    git clone https://github.com/preeti-ramesh/thunai-care.git
     cd thunai-care
 
   (No Git? On Windows run:  winget install Git.Git

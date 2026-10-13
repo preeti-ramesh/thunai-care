@@ -19,7 +19,7 @@ That's all. No installing, no terminal. New here? Open **[START-HERE.txt](START-
 
 ```bat
 :: get the code (or use Download ZIP above)
-git clone https://github.com/YOUR-USERNAME/thunai-care.git
+git clone https://github.com/preeti-ramesh/thunai-care.git
 cd thunai-care
 
 :: open the app — nothing to install
@@ -154,7 +154,7 @@ input record ──► normalize ──► timeline ──► rules ──► re
 
 ## Share it as a link (optional)
 
-Because Thunai Care is a plain web page, GitHub can host it for free so people only need a link — nothing to download. In the repository: **Settings → Pages → Branch: `main`, folder: `/ (root)` → Save.** After a minute it's live at `https://YOUR-USERNAME.github.io/thunai-care/`. Data still stays in each visitor's own browser.
+Because Thunai Care is a plain web page, GitHub can host it for free so people only need a link — nothing to download. In the repository: **Settings → Pages → Branch: `main`, folder: `/ (root)` → Save.** After a minute it's live at `https://preeti-ramesh.github.io/thunai-care/`. Data still stays in each visitor's own browser.
 
 Only do this once you're ready for the project to be public.
 
